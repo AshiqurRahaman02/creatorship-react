@@ -4,7 +4,7 @@ import FormInput from "../components/FormInput";
 import notify from "../components/Notify.jsx";
 import { signIn } from "../services/userService";
 import { ToastContainer } from "react-toastify";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
 	const [email, setEmail] = useState("");
@@ -61,11 +61,14 @@ const SignIn = () => {
 			<div className="min-h-[calc(100vh-5vh)]  text-gray-900 flex justify-center">
 				<div className="max-w-screen-xl m-0 sm:m-10 bg-transparent shadow sm:rounded-lg flex justify-center flex-1">
 					<div className="h-full flex items-center">
-						<form className="form h-min" 
-								style={{
-									backgroundColor: "#ffffff40",
-									backdropFilter: "blur(55px)",
-								}} onSubmit={handleSignInSubmit}>
+						<form
+							className="form h-min"
+							style={{
+								backgroundColor: "#ffffff40",
+								backdropFilter: "blur(55px)",
+							}}
+							onSubmit={handleSignInSubmit}
+						>
 							<FormInput
 								label={`Email`}
 								type="text"
@@ -160,7 +163,7 @@ const SignIn = () => {
 								<span className="span">Forgot password?</span>
 							</div>
 							<button className="button-submit" type="submit">
-							Log In to Continue Your Journey
+								Log In to Continue Your Journey
 							</button>
 							<p className="p">
 								{"Don't have an account?"}{" "}
@@ -251,57 +254,57 @@ const SignIn = () => {
 								onClick={() => router("/")}
 							>
 								<img
-  src="/assets/images/creatorships-logo.png"
-  alt="creatorships-logo"
-  width={50}
-  height={60}
-  className="p-1"
-  title="Creatorships Logo"
-/>
+									src="/assets/images/creatorships-logo.png"
+									alt="creatorships-logo"
+									width={50}
+									height={60}
+									className="p-1"
+									title="Creatorships Logo"
+								/>
 
 								<h1 className="text-2xl  relative top-1">
 									CREATORSHIP
 								</h1>
 							</div>
 							<h1 className="text-4xl font-bold tracking-tight text-blue-900 sm:text-6xl text-left">
-							Welcome Back!
+								Welcome Back!
 							</h1>
 							<p className="mt-6 text-lg leading-8 text-gray-600">
 								{`You're just a step away from continuing your creative journey. Log in to access your dashboard, connect with your community, and make the most of the tools and resources designed to help you thrive.`}
 							</p>
 
 							<div className="flex gap-5 items-center">
-							<div className="flex items-center register-avatars">
-  <img
-    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
-    alt="bonnie avatar"
-    width={50}
-    height={50}
-  />
-  <img
-    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-    alt="jese avatar"
-    width={50}
-    height={50}
-    className="-left-4"
-  />
-  <img
-    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
-    alt="roberta avatar"
-    width={50}
-    height={50}
-    className="-left-10"
-  />
-  <img
-    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png"
-    alt="thomas avatar"
-    width={50}
-    height={50}
-    className="-left-16"
-  />
-</div>
+								<div className="flex items-center register-avatars">
+									<img
+										src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+										alt="bonnie avatar"
+										width={50}
+										height={50}
+									/>
+									<img
+										src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+										alt="jese avatar"
+										width={50}
+										height={50}
+										className="-left-4"
+									/>
+									<img
+										src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
+										alt="roberta avatar"
+										width={50}
+										height={50}
+										className="-left-10"
+									/>
+									<img
+										src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png"
+										alt="thomas avatar"
+										width={50}
+										height={50}
+										className="-left-16"
+									/>
+								</div>
 
-								<hr className="w-0.5 h-10 bg-gray-400 relative -left-8"/>
+								<hr className="w-0.5 h-10 bg-gray-400 relative -left-8" />
 								<p>Over 500 Happy Customers</p>
 							</div>
 						</div>
